@@ -25,16 +25,20 @@ body{
 
 .main-nav {
     display: flex;
+    align-items: center;
+    padding: 20px 0px;
+    font-size: 13px;
+    justify-content: center;
 }
 
 ul {
     list-style: none;
 }
 
-.container ul.main-menu {
+.main-nav ul.main-menu {
     display: flex;
     align-items: center;
-    align-text: center;
+    text-align: center;
     flex:1;
     padding: 0px 20px;
 }
