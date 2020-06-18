@@ -83,6 +83,7 @@ ul {
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .showcase a{
@@ -102,3 +103,55 @@ ul {
 .showcase p {
     margin-top: 10px;
 } 
+
+
+.home-card{
+    width: 100%;
+    height: 300px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.home-card .home-card__box{
+    width: 200px;
+    height: 100%;
+    
+}
+
+.home-card__box img{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.home-card__box h3 {
+    margin-bottom: 10px;
+}
+
+.home-card__box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.home-card__box h4{
+    color:#247DC2;
+    margin-right: 5px;
+}
+
+.home-card__box i {
+    color:#247DC2;
+}
+
+.home-card__box a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.home-card__box h4:hover{
+    color:#247DC2;
+    margin-right: 20px;
+}
+
