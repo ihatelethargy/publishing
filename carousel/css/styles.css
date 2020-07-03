@@ -27,7 +27,7 @@ body{
     z-index: 0;
     opacity: 0;
     transition: opacity .5s ease-in-out;
-    
+     
 }
 
 .slider__item:nth-child(odd){
