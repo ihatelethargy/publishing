@@ -1,6 +1,19 @@
-@import "reset";
 @import "_variables";
 
-*{
-  box-sizing: border-box;
+.box:nth-child(1){
+  width: 100px;
+  height: 100px;
+  background-color: $myBlack;
+}
+
+.box:nth-child(2){
+  width: 100px;
+  height: 100px;
+  background-color: $myBlue;
+}
+
+.box:nth-child(3){
+  width: 100px;
+  height: 100px;
+  background-color: $myBlack;
 }
