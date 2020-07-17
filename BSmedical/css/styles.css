@@ -4,3 +4,87 @@
     box-sizing: border-box;
 }
 
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('../src/temp.jpg');
+    background-position:center;
+    background-size:cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar{
+    display:flex;
+    padding:40px 120px;
+}
+
+.nav-bar img{
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.nav-links{
+    flex:1;
+}
+
+.nav-links ul{
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 25px;
+}
+
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2.5px;
+    background: darkgreen;
+    display: block;
+    margin:auto;
+    transition: .5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.btn{
+    padding: 10px 20px;
+    border:0;
+    background-color: darkgreen;
+    font-weight: bold;
+    cursor: pointer;
+    color:#fff;
+    border-radius: 4px;
+}
+
+.nav-links .btn {
+    float: right;
+}
+
+.banner-title{
+    margin: 80px 130px;
+    color:#fff;
+}
+
+.banner-title h1{
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.banner-title h1 span{
+    color: darkgreen;
+}
