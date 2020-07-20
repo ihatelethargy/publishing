@@ -20,6 +20,7 @@
 }
 
 .nav-bar img{
+    margin-left: 12px;
     border: 2px solid darkgreen;
     border-radius: 4px;
     width: 150px;
@@ -63,7 +64,7 @@
 .btn{
     padding: 10px 20px;
     border:0;
-    background-color: darkgreen;
+    background-color: #35B035;
     font-weight: bold;
     cursor: pointer;
     color:#fff;
@@ -86,7 +87,7 @@
 }
 
 .banner-title h1 span{
-    color: darkgreen;
+    color: #35B035;
 }
 
 .vertical-bar{
@@ -113,7 +114,7 @@
 .social-icons{
     height: 30%;
     width: 80px;
-    background: darkgreen;
+    background: #35B035;
     text-align: center;
     padding-top: 40%;
     bottom: 0;
@@ -160,11 +161,15 @@
 }
 
 @media (max-width:700px){
+    .nav-bar img{
+        margin-top: 25px;
+    }
+
     .vertical-bar{
         display:none;
     }
     .banner-title{
-        margin:80px 40px;
+        margin:60px 40px;
     }
     .banner-title h1{
         font-size: 50px;
@@ -183,7 +188,7 @@
     .nav-bar .fa{
         display: block;
         color:#fff;
-        margin: 10px 25px;
+        margin: 32px 25px;
         font-size: 22px;
         cursor: pointer;
     }
