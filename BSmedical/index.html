@@ -3,32 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>BSmedical</title>
 </head>
 <body>
     <div class="hero">
-        <div class="nav-bar">
-            <div class="nav-logo">
-                <img src="src/logo2.PNG">
-            </div>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">RECITE</a></li>
-                </ul>
-                <button type="button" class="btn">CONTACT</button>                
-            </div>    
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="src/logo2.PNG">
+        </div>
+        <div class="nav-links" id="nav-links">
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+            <ul>
+                <a href="#"><li>HOME</li></a>
+                <a href="#"><li>ABOUT</li></a>
+                <a href="#"><li>RECITE</li></a>
+            </ul>
+            <button type="button" class="btn">CONTACT</button>                
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>    
         </div>
         <div class="banner-title">
             <h1>Modern <span>Quality Goods <br> Services </span>in Medical Supplies</h1>
             <button type="button" class="btn">EXPLORE</button> 
         </div>
         <div class="vertical-bar">
-            <div class="search-icon"></div>
-            <div class="search-icon"></div>
+            <div class="search-icon">
+                <i class="fa fa-stream"></i>
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
         </div>
     </div>
+    <div class="contact"></div>
+    <script src="js/index.js"></script>
 </body>
 </html>
