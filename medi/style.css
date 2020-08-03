@@ -72,6 +72,16 @@ p{
     background-color: #00BB00;
 }
 
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.brand h1 span{
+    color: #00BB00;
+}
+
 /* Hero Section */
 #hero{
     background-image: url(./img/hero-bg.png);
@@ -157,6 +167,11 @@ p{
     padding: 100px 0;
 }
 
+#services .service-top{
+    width: 500px;
+    max-margin: 0 auto;
+}
+
 #services .section-title{
     font-size: 4rem;
     font-weight: 300;
@@ -202,7 +217,7 @@ p{
     height: 100%;
     width: 100%;
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-    opacity: .8;
+    opacity: .9;
     z-index: -1;
 }
 
@@ -355,6 +370,105 @@ p{
 }
 /* End About Section */
 
+
+/* contact Section */
+#contact .contact{
+    flex-direction: column;
+    max-width: 0 auto;
+}
+
+#contact .contact-items{
+    width: 400px;
+
+}
+
+#contact .contact-item{
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0px #0000002c;
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #0000002c;
+}
+
+#contact .icon{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#contact .contact-info h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+#contact .contact-info h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+/* End contact Section */
+
+/* Footer */
+
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2{
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+
+#footer .social-item img{
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+
+#footer .social-item img:hover{
+    filter: grayscale(0);
+}
+
+#footer p{
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* End Footer */
+
 /* keyframes */
 @keyframes text_reveal_box{
     50%{
@@ -379,3 +493,130 @@ p{
         font-weight: 500px;
     }
 }
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px){
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    /* hero */
+    #hero h1{
+        font-size: 7rem;
+    }
+    /* End hero */
+
+    /* Service Section */
+    #services .service-bottom .service-item{
+         flex-basis: 45%;
+         margin: 2.5%;
+
+    }
+    /* End Service Section */
+
+
+    /* Project Section */
+    #projects .project-item{
+        flex-direction: row;
+    }
+
+    #projects .project-item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    #projects .project-item{
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+    
+    /* End Project Section */
+    /* About */
+    #about .about{
+        flex-direction: row;
+    }
+
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+
+    #about .about .col-left .about-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid #00BB00;
+    }
+
+    #about  .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+
+    #about .col-right h1{
+        text-align: left;
+    }
+    /* End About */
+
+    /* Contact  Section */
+    #contact .contact{
+        flex-direction: column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+
+    #contact .contact-items{
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        margin:0;
+    }
+    #contact .contact-item{
+        margin: 20px;
+        flex-direction: row;
+    }
+
+    #contact .contact-item .icon{
+        height: 100px;
+        width: 100px;
+    }
+
+    #contact .contact-item .icon img{
+        object-fit: contain;
+    }
+
+    #contact .contact-item .contact-info{
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;        
+    }
+    /* End Contact Section */
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width:1200){
+    #services .service-bottom .service-item{
+        flex-basis: 22%;
+        margin: 1.5%;
+    }
+}
+/* End Media Query For Desktop */
