@@ -64,11 +64,16 @@ p {
 }
 .brand h1 {
 	font-size: 3rem;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: white;
 }
 .brand h1 span {
 	color: #00BB00;
+}
+
+.brand h1 .edical {
+	color: white;
+	font-size: 2.2rem;
 }
 
 /* Header section */
@@ -272,6 +277,13 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 }
+
+#services .point{
+	font-size: 18px;
+	font-weight: 500;
+	color: #00BB00;
+}
+
 #services .service-top {
 	max-width: 500px;
 	margin: 0 auto;
@@ -298,6 +310,40 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
+
+
+#services .service-item:nth-child(2) {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-2.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#services .service-item:nth-child(3) {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-3.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
 #services .service-item::after {
 	content: '';
 	position: absolute;
@@ -305,7 +351,8 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	/* background-image: linear-gradient(60deg, #29323c 10%, #485563 200%); */
+	
 	opacity: .9;
 	z-index: -1;
 }
@@ -331,7 +378,7 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 100px 0; 
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -341,6 +388,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	/* border: 1px solid #485563; */
 }
 #projects .project-item {
 	display: flex;
@@ -360,8 +408,9 @@ p {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 00%);
 	color: white;
+	
 }
 #projects .project-info h1 {
 	font-size: 4rem;
@@ -373,8 +422,25 @@ p {
 	margin-top: 10px;
 }
 #projects .project-info p {
+	margin-top: 18px;
+	/* border: 4px solid red; */
+	background-color: #00BB00;
+	border-radius: 5px;
+	padding: 1px 10px;
 	color: white;
+	font-size: 15px;
 }
+
+/* #projects .project-info .test {
+	margin-top: 18px;
+	border: 2px solid #00BB00;
+	background-color: #00BB00;
+	border-radius: 4px;
+	padding: 1px 10px;
+	color: white;
+	font-size: 15px;
+} */
+
 #projects .project-img {
 	flex-basis: 50%;
 	height: 300px;
@@ -388,8 +454,9 @@ p {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .7;
+	background-image: linear-gradient(60deg, #29323c 0%, white 0%);
+	opacity: .01;
+	
 }
 #projects .project-img img {
 	transition: .3s ease transform;
@@ -445,6 +512,16 @@ p {
 	border: 7px solid #00BB00;
 	z-index: -1;
 }
+
+.col-right img{
+	border-radius: 70px;
+	position: relative;
+	display: inline-block;
+	top: 60px;
+	left: 400px;
+	width: 130px;
+	height: 130px;
+}
 /* End About Section */
 
 /* contact Section */
@@ -478,6 +555,10 @@ p {
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
+
+.contact-info {
+	border:none;
+}
 #contact .contact-info h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
@@ -487,7 +568,14 @@ p {
 	font-size: 1.3rem;
 	line-height: 2rem;
 	font-weight: 500;
+	margin-bottom: 4px;
 }
+
+.contact-info button {
+	border: none;
+	padding: 2px;
+}
+
 /*End contact Section */
 
 /* Footer */
@@ -588,6 +676,7 @@ p {
 	/* End Services Section */
 
 	/* Project */
+
 	#projects .project-item {
 		flex-direction: row;
 	}
@@ -603,9 +692,19 @@ p {
 	#projects .all-projects .project-info {
 		height: 100%;
 	}
+	
+	#projects .all-projects .project-info p{
+		border: 2px solid #00BB00;
+		border-radius: 4px;
+		padding: 10px;
+		margin-top: 50px;
+		font-size: 25px;
+	}
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
+
+
 	/* End Project */
 
 	/* About */
