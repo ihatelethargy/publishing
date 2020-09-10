@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__title">삼국지 MBTI <br> 나와 비슷한 삼국지 인물 찾기</div>
+        <div class="header__welcome" id='welcome'>
+          <span id="spanMbti"></span>
+        </div>
+    </div>
+    <div class="box" id="box" method="post">
+        <h2>삼국지 MBTI TEST</h2>
+        <form id="userForm">
+          <div class="user-box">
+            <input type="text" name="" id="name">
+            <label>이름을 입력하세요.</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" id="mbti">
+            <label>MBTI를 입력하세요.(4자리로 입력)</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <input class="btn" id="btn" type="button" value="나와 비슷한 삼국지 장수 확인" onclick="clickHandler();">
+          </a>
+        </form>
+      </div>
+      <div class="again__box">
+        <a href="index.html"><span class="again" id="again"></span></a>
+      </div>
+</body>
+<script src="app.js"></script>
+</html>

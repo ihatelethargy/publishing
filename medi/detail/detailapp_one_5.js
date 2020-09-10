@@ -11,11 +11,11 @@ imgSlider.addEventListener('click', event => {
     }
 
     else if (event.target === product_2) {
-        BigImage.setAttribute ("src","images/product1/product1_one.PNG");
+        BigImage.setAttribute ("src","images/product1/product53.png");
     }
 
     else {
-    BigImage.setAttribute ("src","images/product1/product1_one.PNG");
+    BigImage.setAttribute ("src","images/product1/product52.png");
     }
 });
 
