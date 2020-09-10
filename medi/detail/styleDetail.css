@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -16,6 +16,37 @@ body {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+.menu_hover{
+    margin: 10px;
+    font-size: 30px;
+    color: #00BB00;
+    font-family: 'Handlee', cursive;
+}
+
+
+.menu_hover:hover .menu{ 
+    display: block;
+}
+
+.menu_hover:hover i{ 
+    opacity: 0;
+}
+
+.menu{
+    display:none;
+    padding: 10px;
+    border-radius: 30px;
+    /* border:2px solid #00BB00; */
+    margin-right: 10px;
+}
+
+.menu span{
+    font-size:20px;
+    color: #000;
+    
+}
+
 
 .container {
     height: 100%;
