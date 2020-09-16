@@ -44,7 +44,16 @@ body {
 .menu span{
     font-size:20px;
     color: #000;
-    
+}
+
+.menu a{
+    color: #000;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #00BB00;
+    text-decoration: none;
 }
 
 
