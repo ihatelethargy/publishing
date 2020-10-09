@@ -43,6 +43,15 @@ h1.title{
     
 }
 
+/* 
+*/
+
+.diff_services img{
+    
+    width: 400px;
+    height: 400px;
+}
+
 
 /* Nav Bar */
 .navbar{
