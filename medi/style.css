@@ -1,4 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,800&family=Roboto:wght@100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -6,7 +7,10 @@
 }
 html {
 	font-size: 10px;
+	color: #000;
+	font-weight: 600;
 	font-family: 'Montserrat', sans-serif;
+	
 	scroll-behavior: smooth;
 }
 a {
@@ -418,7 +422,7 @@ p {
 	
 }
 #projects .project-info h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 500;
 }
 #projects .project-info h2 {
@@ -481,7 +485,7 @@ p {
 }
 #about .col-left {
 	width: 250px;
-	height: 360px;
+	height: 200px;
 }
 #about .col-right {
 	margin-top: 20px;
@@ -520,40 +524,45 @@ p {
 	z-index: -1;
 }
 
-.col-right .ceoName{
-	position: relative;
-	display: inline-block;
-	top: 10px;
-	left: 290px;
-	width: 200px;
-	height: 150px;
-}
-
-.col-right .ceoSign{
-	position: relative;
-	display: inline-block;
-	top: 0px;
-	left: 300px;
-	width: 200px;
-	height: 150px;
-}
-.reg {
-	margin-top: 80px;
+#about .col-down{
 	display: flex;
+	flex-direction: column;
+	/* width: 100%; */
+	/* justify-content: flex-start; */
+	align-items: center;
 }
 
-.fuck {
-	height: 250px;
-	width: 250px;
-	margin: 0 25px;
+#about .signBlock{
+	display:none;
 }
+
 /* End About Section */
+
+#partner .partner__intro {
+	display: flex;
+	justify-content: center;
+}
+
+#partner .partnerTitle{
+	color:#00BB00;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+/* Start partner */
+
+
+
+/* End partner */
 
 /* contact Section */
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+#contact .section-title{
+	margin-bottom: 50px;
 }
 #contact .contact-items {
 	width: 400px;
@@ -563,11 +572,11 @@ p {
 	padding: 20px;
 	text-align: center;
 	border-radius: 10px;
-	padding: 30px;
+	padding: 20px;
 	margin: 30px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	flex-direction: column;
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: .3s ease box-shadow;
@@ -586,15 +595,16 @@ p {
 }
 
 .contact-info a{
-	color: #000;
+	/* font-size: 11px; */
+	color: #000000;
 }
 #contact .contact-info h1 {
 	font-size: 2.5rem;
 	font-weight: 500;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 #contact .contact-info h2 {
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	line-height: 2rem;
 	font-weight: 500;
 	margin-bottom: 4px;
@@ -603,6 +613,27 @@ p {
 .contact-info button {
 	border: none;
 	padding: 2px;
+}
+
+#contact .contact-item__btn{
+	display:flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.contact-item__btn button{
+	text-decoration: none;
+	border-radius: 4px;
+	height: 20px;
+	width: 70px;
+}
+
+.contact-item__btn button:hover{
+	background-color: #00BB00;
+}
+
+.contact-item__btn a:hover{
+	color:#fff;
 }
 
 /*End contact Section */
@@ -702,6 +733,10 @@ p {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
+
+	#services .section-title .point{
+		font-family: 'Montserrat', sans-serif;
+	}
 	/* End Services Section */
 
 	/* Project */
@@ -741,6 +776,7 @@ p {
 	/* About */
 	#about .about {
 		flex-direction: row;
+		
 	}
 	#about .col-left {
 		width: 600px;
@@ -763,14 +799,68 @@ p {
 	}
 	
 	#about .aboutName{
+		color:#00BB00;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	#about .signBlock {
+		display: block;
+	}
+
+	#about .col-down{
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+		
+		/* background-color: red; */
+	}
+
+	.ceoName{
+		order:1;
+	}
+
+	.ceoName,
+	.ceoSign
+	{
+		display:block;
+		width: 240px;
+	}
+
+	/* End About */
+	
+
+	/* Start partner */
+
+	#partner{
+		width: 100%;
+	}
+
+	#partner .partner__intro{
+		display:flex;
+		justify-content: center;	
+		margin-bottom: 50px;
+	}
+
+	#partner .partnerTitle{
 		
 		color:#00BB00;
 		font-size: 20px;
 		font-weight: 600;
 	}
-	
 
-	/* End About */
+	#partner .partner__img{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#partner .partner__img__item{
+		display:block;
+		width: 200px;
+	}
+
+
+	/* End partner */
 
 	/* contact  */
 	#contact .contact {
@@ -799,10 +889,21 @@ p {
 	#contact .contact-item .icon img {
 		object-fit: contain;
 	}
+	
+
 	#contact .contact-item .contact-info {
 		width: 100%;
 		text-align: left;
 		padding-left: 20px;
+	}
+	.contact-info{
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.contact-item__btn button{
+		transition: all 200ms ease-in;
 	}
 	/* End contact  */
 }
