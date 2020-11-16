@@ -366,7 +366,7 @@ p {
 	margin-bottom: 20px;
 }
 #services .service-item h2 {
-	font-size: 2.6rem;
+	font-size: 2.2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
@@ -488,7 +488,7 @@ p {
 	height: 200px;
 }
 #about .col-right {
-	margin-top: 20px;
+	margin-top: 70px;
 	width: 100%;
 }
 
@@ -498,9 +498,7 @@ p {
 	letter-spacing: .2rem;
 	margin-bottom: 10px;
 }
-#about .col-right p {
-	margin-bottom: 20px;
-}
+
 #about .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
@@ -544,7 +542,7 @@ p {
 }
 
 #partner .partnerTitle{
-	color:#00BB00;
+	color:gray;
 	font-size: 15px;
 	font-weight: 600;
 }
@@ -797,8 +795,13 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
+
+	#about .col-right p {
+		text-align: justify;
+	}
 	
 	#about .aboutName{
+		
 		color:#00BB00;
 		font-size: 20px;
 		font-weight: 600;
@@ -815,6 +818,8 @@ p {
 		
 		/* background-color: red; */
 	}
+
+
 
 	.ceoName{
 		order:1;
@@ -844,7 +849,7 @@ p {
 
 	#partner .partnerTitle{
 		
-		color:#00BB00;
+		color:gray;
 		font-size: 20px;
 		font-weight: 600;
 	}

@@ -30,7 +30,7 @@ body {
   margin-top: 15px;
 }
 
-.header .header__welcome span{
+.header .header__welcome span {
   color: #03e9f4;
   font-size: 20px;
 }
@@ -151,13 +151,16 @@ body {
   border:0;
   outline:0;
   background-color: #0F1924;
-  border-radius: 10px;
+  border-radius: 0px;
+  /* padding: 10px; */
   color: white;
   font-size: 20px;
-  transition: all .05s ease-in-out;
+  transition: all 1s ease-in-out;
+  /* transition: background-color #03E9F4 2000ms; */
 }
 .box .btn:hover{
   background-color: #03E9F4;
+  /* transition: background-color #03E9F4 2000ms; */
 }
 
 @keyframes btn-anim1 {

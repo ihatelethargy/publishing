@@ -6,20 +6,20 @@ const imgSlider = document.getElementById('img-slider');
 imgSlider.addEventListener('click', event => {
 
     if (event.target === product_1) {
-         BigImage.setAttribute ("src","images/product1/product41.PNG");
+         BigImage.setAttribute ("src","images/product1/productSub.PNG");
     }
 
     else if (event.target === product_2) {
-        BigImage.setAttribute ("src","images/product1/product42.PNG");
+        BigImage.setAttribute ("src","images/product1/product41.PNG");
     }
     else if (event.target === product_3) {
-        BigImage.setAttribute ("src","images/product1/product43.PNG");
+        BigImage.setAttribute ("src","");
     }
     else if (event.target === product_4) {
-        BigImage.setAttribute ("src","images/product1/product44.PNG");
+        BigImage.setAttribute ("src","");
     }
     else {
-    BigImage.setAttribute ("src","images/product1/product45.PNG");
+    BigImage.setAttribute ("src","");
     }
 });
 

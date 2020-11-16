@@ -6,15 +6,15 @@ const imgSlider = document.getElementById('img-slider');
 imgSlider.addEventListener('click', event => {
 
     if (event.target === product_1) {
-         BigImage.setAttribute ("src","images/product2/product2_1_1.PNG");
+         BigImage.setAttribute ("src","images/product2/product2_3_1.PNG");
     }
 
     else if (event.target === product_2) {
-        BigImage.setAttribute ("src","images/product2/product2_1_2.PNG");
+        BigImage.setAttribute ("src","");
     }
 
     else {
-    BigImage.setAttribute ("src","images/product2/product2_1_2.PNG");
+    BigImage.setAttribute ("src","");
     }
 });
 

@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
 }
+
+p{
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    /* font-family: 'Nanum Myeongjo', serif; */
+}
+
+.infos h1{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.menu span {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+/* h5{
+    font-family: 'Nanum Myeongjo', serif;
+} */
 
 html,
 body {
@@ -90,6 +109,7 @@ body {
     margin-bottom: 25px;
 }
 
+
 .infos h1 {
     display: none;
     margin-top: 60px;
@@ -123,6 +143,7 @@ body {
     display: flex;
     justify-content: space-between;
     color: gray;
+    width: 85%;
 }
 
 #more-infos h5 {
@@ -173,23 +194,28 @@ h3:nth-child(2) {
 
 #info-content {
     font-size: 12px;
-    height: 100px;
+    height: 270px;
+    width: 85%;
+    /* text-align: justify; */
 }
 
-.buttons {
-    /* border: 1px solid red; */
-    height: 100px;
-    width: 300px;
-    
-    /* margin-right: 40px; */
-    /* width: 260px; */
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    justify-content: space-around;
+.paragraph:nth-child(1) {
+    text-align: justify;
+}
+
+.paragraph:nth-child(2) {
+    text-align: justify;
+}
+
+.paragraph:nth-child(3) {
     
 }
+
+
+.buttons {
+    display:none;
+}
+
 
 .buttons button {
     width: 40px;
@@ -246,9 +272,15 @@ button a {
     height: 100%;
 }
 
+.smallLogo {
+    display: none;
+    
+}
 
 
 @media ( min-width : 1025px) {
+
+    
 
     body {
         display: flex;
@@ -275,40 +307,69 @@ button a {
         border-radius: 15px;
     }
 
+    .smallLogo{
+        display: block;
+        align-self: flex-start;
+        margin-top: 30px;
+    }
+
     .images {
-        width: 40%;
+        width: 30%;
         height: 100%;
     }
 
     .images h2 {
       display: none;
     }
+    
+    .proMini{
+        font-size: 20px;
+    }
 
     .infos {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-top: 0px;
-        height: 80%;
+        /* border: 1px solid #000; */
+        margin-top: 60px;
+        height: 70%;
         width: 45%;
-       font-size: 20px;
-        padding-right: 70px;
+        font-size: 20px;
+        padding-right: 90px;
         
+    }
+
+    .infos .bolder{
+        font-weight: 800;
     }
 
     .infos h1 {
         display: block;
         font-size: 20px;
+        margin-bottom: 20px;
     }
 
     .infos h1:nth-child(1){
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .buttons {
+        /* border: 1px solid red; */
+        height: 100px;
+        width: 300px;
+        
+        /* margin-right: 40px; */
+        /* width: 260px; */
+        display: flex;
         flex-direction: row;
-        font-size: 15px;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: space-around;
+        
     }
+    
+
+    
     .buttons button {
         padding: 8px;
     }
@@ -328,13 +389,15 @@ button a {
         color: #00BB00;
         
     }
-   
+    .smallEqua {
+        font-size: 12px;
+    }
+    
     
 }
 
 
 @media (min-width : 670px) {
-
     .container {
         display: flex;
         align-items: center;
@@ -348,10 +411,40 @@ button a {
         /* background-color: red; */
     }
     
-    
+    .buttons {
+        /* border: 1px solid red; */
+        height: 100px;
+        width: 300px;
+        
+        /* margin-right: 40px; */
+        /* width: 260px; */
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: space-around;
+    }
 
+    .smallLogo{
+        display: block;
+        /* position: fixed; */
+        align-self: flex-start;
+        
+        z-index: 1;
+
+    }
+   
+
+    .smallLogo img{
+        /* border: 1px solid red; */
+        width: 160px;
+    }
+
+    .proMini{
+        font-size: 20px;
+    }
     .card {
-        width: 75%;
+        width: 90%;
         height: 100%;
     }
 
@@ -359,5 +452,9 @@ button a {
         font-size: 30px;
         
     }
+    .smallEqua {
+        font-size: 12px;
+    }
+    
 
 }

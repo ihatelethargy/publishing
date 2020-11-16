@@ -14,7 +14,7 @@ imgSlider.addEventListener('click', event => {
     }
 
     else {
-    BigImage.setAttribute ("src","images/");
+    BigImage.setAttribute ("src","images/product1/product33.PNG");
     }
 });
 
