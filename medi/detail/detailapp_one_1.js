@@ -28,9 +28,9 @@ const paragraph = document.getElementsByClassName('paragraph');
 
 
 function styleItem (a,b,c) {
-    a.style.cssText = 'color:black ; border-bottom: 2px solid black ; padding-bottom: 6px';
-    b.style.cssText = 'color:gray ; border-bottom: none';
-    c.style.cssText = 'color:gray ; border-bottom: none';
+    a.style.cssText = 'color:black ; padding-bottom: 6px';
+    b.style.cssText = 'color:black ; ';
+    c.style.cssText = 'color:black ; ';
 }
 
 function displayPrph (e,f,g) {
